@@ -99,6 +99,9 @@
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="YumeMichi/proton_android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
 
+  <!-- Legacy repositories -->
+  <project name="platform/external/tinyxml" path="external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
+
   <!-- Remove unused repositories -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
