@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Remotes -->
-  <remote name="github" fetch="https://github.com" />
-  <remote name="github-ssh" fetch="ssh://git@github.com" />
-  <remote name="gitlab" fetch="https://gitlab.com" />
-  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
-  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
-  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
-  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
-  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
-
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
 
@@ -19,7 +9,7 @@
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton">
+  <project name="YumeMichi/build_make" path="build/make" remote="github" groups="proton" revision="sc">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,7 +19,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
-  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+  <project name="YumeMichi/build_soong" path="build/soong" remote="github" groups="proton" revision="sc">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -38,7 +28,7 @@
   <remove-project name="platform/art" />
   <project name="android_art" path="art" remote="proton" groups="proton" />
   <remove-project name="platform/system/core" />
-  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <project name="YumeMichi/system_core" path="system/core" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/system/sepolicy" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
@@ -83,33 +73,11 @@
   <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="proton" groups="proton" />
   <remove-project name="platform/external/openssh" />
   <project name="android_external_openssh" path="external/openssh" remote="proton" groups="proton" />
-  <remove-project name="device/google/coral-sepolicy" />
-  <project name="android_device_google_coral-sepolicy" path="device/google/coral-sepolicy" remote="proton" groups="proton" />
-  <remove-project name="device/google/coral" />
-  <project name="android_device_google_coral" path="device/google/coral" remote="proton" groups="proton" />
-  <remove-project name="device/google/redfin" />
-  <project name="android_device_google_redfin" path="device/google/redfin" remote="proton" groups="proton" />
-  <remove-project name="device/google/redbull" />
-  <project name="android_device_google_redbull" path="device/google/redbull" remote="proton" groups="proton" />
-  <remove-project name="device/google/redbull-sepolicy" />
-  <project name="android_device_google_redbull-sepolicy" path="device/google/redbull-sepolicy" remote="proton" groups="proton" />
-  <remove-project name="device/google/bramble" />
-  <project name="android_device_google_bramble" path="device/google/bramble" remote="proton" groups="proton" />
-  <remove-project name="platform/hardware/qcom/sm8150/display" />
-  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
-  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
-  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" />
-  <remove-project name="platform/hardware/qcom/sm8150/media" />
-  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
-  <remove-project name="platform/hardware/qcom/sm7250/display" />
-  <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" remote="proton" groups="proton" />
-  <remove-project name="platform/hardware/qcom/sm7250/media" />
-  <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" remote="proton" groups="proton" />
   <remove-project name="platform/system/memory/lmkd" />
   <project name="android_system_memory_lmkd" path="system/memory/lmkd" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="YumeMichi/vendor_proton" path="vendor/proton" remote="github" groups="proton" revision="sc-qc" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
@@ -125,14 +93,57 @@
   <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
   <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
   <project name="android_tools_extract-utils" path="tools/extract-utils" remote="proton" groups="proton" />
-  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
   <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="sc" />
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
-  <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
-  <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
-  <project name="android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
-  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
-  <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
+  <project name="YumeMichi/proton_android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
+
+  <!-- Remove unused repositories -->
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/generic/opengl-transport" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/barbet" />
+  <remove-project name="device/google/barbet-kernel" />
+  <remove-project name="device/google/barbet-sepolicy" />
+  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/bonito-sepolicy" />
+  <remove-project name="device/google/bramble"/>
+  <remove-project name="device/google/bramble-sepolicy"/>
+  <remove-project name="device/google/contexthub" />
+  <remove-project name="device/google/coral" />
+  <remove-project name="device/google/coral-kernel" />
+  <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/crosshatch" />
+  <remove-project name="device/google/crosshatch-kernel" />
+  <remove-project name="device/google/crosshatch-sepolicy" />
+  <remove-project name="device/google/redbull"/>
+  <remove-project name="device/google/redbull-kernel"/>
+  <remove-project name="device/google/redbull-sepolicy"/>
+  <remove-project name="device/google/redfin"/>
+  <remove-project name="device/google/redfin-sepolicy"/>
+  <remove-project name="device/google/sunfish"/>
+  <remove-project name="device/google/sunfish-kernel"/>
+  <remove-project name="device/google/sunfish-sepolicy"/>
+  <remove-project name="device/google/trout" />
+  <remove-project name="device/google/vrservices" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/linaro/poplar" />
+  <remove-project name="device/linaro/poplar-kernel" />
+  <remove-project name="device/ti/beagle-x15" />
+  <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 </manifest>

@@ -8,6 +8,18 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- Remotes -->
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
+  <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
+  <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
+  <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-18.1" />
+  <remote name="lineage-ssh" fetch="ssh://git@github.com/LineageOS" revision="lineage-18.1" />
+
   <superproject name="platform/superproject" remote="aosp"/>
   <contactinfo bugurl="go/repo-bug" />
 
@@ -1094,4 +1106,7 @@
 
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
+
+  <!-- LineageOS repos -->
+  <include name="lineage.xml"/>
 </manifest>
