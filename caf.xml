@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/qcom/qssi" name="device/qcom/qssi" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/ant-wireless/ant_client" name="platform/external/ant-wireless/ant_client" groups="qcom,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.10.3.r1-00300-sdm845.0" />
+  <project path="external/ant-wireless/hidl" name="platform/external/ant-wireless/hidl" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/json-c" name="platform/external/json-c" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.9.12.1.r1-00100-SMxx50.QSSI12.0" />
+  <project path="hardware/qcom/thermal" name="platform/hardware/qcom/thermal" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/external/libnfc-nci" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/frameworks" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/packages/apps/Nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" groups="qcom,pdk-qcom" remote="caf_vendor" />
+</manifest>
