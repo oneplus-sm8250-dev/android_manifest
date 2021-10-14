@@ -5,7 +5,7 @@
 
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="YumeMichi/frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
@@ -42,7 +42,7 @@
   <remove-project name="platform/packages/modules/Connectivity" />
   <project name="android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="proton" groups="proton" />
   <remove-project name="platform/bionic" />
-  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <project name="YumeMichi/bionic" path="bionic" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Launcher3" />
@@ -122,6 +122,7 @@
   <project path="vendor/qcom/opensource/dataservices" name="Pie-onyx/vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="Pie-onyx/vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/usb" name="Pie-onyx/vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="Pie-onyx/vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="Pie-onyx/vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
 
   <!-- Legacy repositories -->
