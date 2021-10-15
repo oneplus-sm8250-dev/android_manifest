@@ -4,10 +4,10 @@
   <remove-project name="platform/external/zlib" />
 
   <!-- Replace existing repositories -->
-  <remove-project name="platform/frameworks/base" />
-  <project name="YumeMichi/frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
-  <remove-project name="platform/libcore" />
-  <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
+  <remove-project name="platform/bionic" />
+  <project name="YumeMichi/bionic" path="bionic" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/bootable/recovery" />
+  <project name="Pie-onyx/bootable_recovery" path="bootable/recovery" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/build" />
   <project name="YumeMichi/build_make" path="build/make" remote="github" groups="proton" revision="sc">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -23,12 +23,21 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <remove-project name="platform/external/tinycompress" />
+  <project name="Pie-onyx/external_tinycompress" path="external/tinycompress" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/frameworks/base" />
+  <project name="YumeMichi/frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project name="Pie-onyx/hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/system/core" />
+  <project name="YumeMichi/system_core" path="system/core" remote="github" groups="proton" revision="sc" />
+
+  <remove-project name="platform/libcore" />
+  <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="device/common" />
   <project name="android_device_common" path="device/common" remote="proton" groups="proton" />
   <remove-project name="platform/art" />
   <project name="android_art" path="art" remote="proton" groups="proton" />
-  <remove-project name="platform/system/core" />
-  <project name="YumeMichi/system_core" path="system/core" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/system/sepolicy" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
@@ -41,8 +50,6 @@
   <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="proton" groups="proton" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <project name="android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="proton" groups="proton" />
-  <remove-project name="platform/bionic" />
-  <project name="YumeMichi/bionic" path="bionic" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Launcher3" />
@@ -121,6 +128,7 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Pie-onyx/vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/dataservices" name="Pie-onyx/vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="Pie-onyx/vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="Pie-onyx/vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/usb" name="Pie-onyx/vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/vibrator" name="Pie-onyx/vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="Pie-onyx/vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
