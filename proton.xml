@@ -4,6 +4,8 @@
   <remove-project name="platform/external/zlib" />
 
   <!-- Replace existing repositories -->
+  <remove-project name="kernel/configs" />
+  <project name="YumeMichi/kernel_configs" path="kernel/configs" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/bionic" />
   <project name="YumeMichi/bionic" path="bionic" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/bootable/recovery" />
