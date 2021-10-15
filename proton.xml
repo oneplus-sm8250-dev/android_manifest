@@ -130,6 +130,7 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Pie-onyx/vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/dataservices" name="Pie-onyx/vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="Pie-onyx/vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="Pie-onyx/vendor_qcom_opensource_power" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/thermal-engine" name="Pie-onyx/vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/usb" name="Pie-onyx/vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/vibrator" name="Pie-onyx/vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
