@@ -111,6 +111,8 @@
   <project name="YumeMichi/proton_android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
 
   <!-- CAF repositories -->
+  <project path="device/qcom/sepolicy" name="oneplus-sm8250-devs/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-devs/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="hardware/qcom-caf/sdm845/audio" name="Pie-onyx/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
   <project path="hardware/qcom-caf/sdm845/display" name="Pie-onyx/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="aosp-12.0_caf-sdm845" remote="github" />
   <project path="hardware/qcom-caf/sdm845/media" name="Pie-onyx/hardware_qcom_media" groups="qcom,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
