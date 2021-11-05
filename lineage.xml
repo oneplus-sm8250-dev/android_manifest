@@ -18,6 +18,8 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
   </project>
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-18.1-caf" remote="lineage" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,pdk-qcom" remote="lineage" />
@@ -25,6 +27,8 @@
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-18.1-pn5xx" remote="lineage" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-18.1-pn5xx" remote="lineage" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-18.1-sn100x" remote="lineage" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-18.1-sn100x" remote="lineage" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
