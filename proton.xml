@@ -104,7 +104,7 @@
   <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
   <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
   <project name="android_tools_extract-utils" path="tools/extract-utils" remote="proton" groups="proton" />
-  <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="sc" />
+  <project name="Project-Awaken/android_vendor_gms" path="vendor/gms" remote="gitlab" revision="12" depth="1" />
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
