@@ -5,15 +5,13 @@
 
   <!-- Replace existing repositories -->
   <remove-project name="kernel/configs" />
-  <project name="YumeMichi/kernel_configs" path="kernel/configs" remote="github" groups="proton" revision="sc" />
-  <remove-project name="platform/art" />
-  <project name="Pie-onyx/art" path="art" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_kernel_configs" path="kernel/configs" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/bionic" />
-  <project name="YumeMichi/bionic" path="bionic" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_bionic" path="bionic" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/bootable/recovery" />
-  <project name="Pie-onyx/bootable_recovery" path="bootable/recovery" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_bootable_recovery" path="bootable/recovery" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/build" />
-  <project name="YumeMichi/build_make" path="build/make" remote="github" groups="proton" revision="sc">
+  <project name="oneplus-sm8250-dev/android_build_make" path="build/make" remote="github" groups="proton" revision="sc">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,23 +21,26 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
-  <project name="YumeMichi/build_soong" path="build/soong" remote="github" groups="proton" revision="sc">
+  <project name="oneplus-sm8250-dev/android_build_soong" path="build/soong" remote="github" groups="proton" revision="sc">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <remove-project name="platform/external/tinycompress" />
-  <project name="Pie-onyx/external_tinycompress" path="external/tinycompress" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_external_tinycompress" path="external/tinycompress" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_external_tinyxml" path="external/tinyxml" remote="github" groups="pdk" revision="sc" />
   <remove-project name="platform/frameworks/base" />
-  <project name="YumeMichi/frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/frameworks/native" />
-  <project name="Pie-onyx/frameworks_native" path="frameworks/native" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_frameworks_native" path="frameworks/native" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/hardware/libhardware" />
-  <project name="Pie-onyx/hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/system/core" />
-  <project name="YumeMichi/system_core" path="system/core" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_system_core" path="system/core" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/system/libhwbinder" />
-  <project name="oneplus-sm8250-devs/android_system_libhwbinder" path="system/libhwbinder" remote="github" groups="proton" revision="lineage-19.0" />
+  <project name="oneplus-sm8250-dev/android_system_libhwbinder" path="system/libhwbinder" remote="github" groups="proton" revision="lineage-19.0" />
 
+  <remove-project name="platform/art" />
+  <project name="android_art" path="art" remote="proton" groups="proton" />
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="device/common" />
@@ -88,7 +89,7 @@
   <project name="android_system_memory_lmkd" path="system/memory/lmkd" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="YumeMichi/vendor_proton" path="vendor/proton" remote="github" groups="proton" revision="sc-qc" />
+  <project name="oneplus-sm8250-dev/android_vendor_proton" path="vendor/proton" remote="github" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
@@ -108,40 +109,39 @@
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
-  <project name="YumeMichi/proton_android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
 
   <!-- CAF repositories -->
-  <project path="device/qcom/sepolicy" name="oneplus-sm8250-devs/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-devs/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/audio" name="Pie-onyx/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/display" name="Pie-onyx/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="aosp-12.0_caf-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/media" name="Pie-onyx/hardware_qcom_media" groups="qcom,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="Pie-onyx/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="aosp-12.0_caf-sm8250" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/display" name="Pie-onyx/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="aosp-12.0_caf-sm8250" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/media" name="Pie-onyx/hardware_qcom_media" groups="qcom,pdk-qcom" revision="aosp-12.0_caf-sm8250" remote="github" />
-  <project path="hardware/qcom-caf/wlan" name="Pie-onyx/hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="aosp-12.0_caf" remote="github" />
-  <project path="vendor/codeaurora/telephony" name="Pie-onyx/vendor_codeaurora_telephony" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="Pie-onyx/vendor_nxp_interfaces_opensource_nfc" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="Pie-onyx/vendor_nxp_opensource_external_libnfc-nci" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="Pie-onyx/vendor_nxp_opensource_frameworks" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="Pie-onyx/vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/audio" name="Pie-onyx/vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <!-- <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Pie-onyx/vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="Pie-onyx/vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-old" remote="github" />
-  <!-- <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="Pie-onyx/vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <!-- <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="Pie-onyx/vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <!-- <project path="vendor/qcom/opensource/commonsys/system/bt" name="Pie-onyx/vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Pie-onyx/vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/dataservices" name="Pie-onyx/vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/interfaces" name="Pie-onyx/vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/power" name="Pie-onyx/vendor_qcom_opensource_power" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="Pie-onyx/vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/usb" name="Pie-onyx/vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/vibrator" name="Pie-onyx/vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="Pie-onyx/vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
+  <project path="device/qcom/sepolicy" name="oneplus-sm8250-dev/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-dev/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/display" name="oneplus-sm8250-dev/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sc-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/media" name="oneplus-sm8250-dev/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sc-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/display" name="oneplus-sm8250-dev/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sc-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/media" name="oneplus-sm8250-dev/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sc-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/wlan" name="oneplus-sm8250-dev/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="sc-caf" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="oneplus-sm8250-dev/android_vendor_codeaurora_telephony" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="oneplus-sm8250-dev/android_vendor_nxp_interfaces_opensource_nfc" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_external_libnfc-nci" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_frameworks" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/audio" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <!-- <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-old" remote="github" />
+  <!-- <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <!-- <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <!-- <project path="vendor/qcom/opensource/commonsys/system/bt" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/usb" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
 
   <!-- Legacy repositories -->
-  <project name="platform/external/tinyxml" path="external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
 
   <!-- Remove unused repositories -->
   <remove-project name="device/amlogic/yukawa" />
