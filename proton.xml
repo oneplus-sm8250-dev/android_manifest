@@ -28,16 +28,30 @@
   <remove-project name="platform/external/tinycompress" />
   <project name="oneplus-sm8250-dev/android_external_tinycompress" path="external/tinycompress" remote="github" groups="proton" revision="sc" />
   <project name="oneplus-sm8250-dev/android_external_tinyxml" path="external/tinyxml" remote="github" groups="pdk" revision="sc" />
+  <remove-project name="platform/frameworks/av" />
+  <project name="oneplus-sm8250-dev/android_frameworks_av" path="frameworks/av" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/frameworks/base" />
-  <project name="oneplus-sm8250-dev/android_frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/frameworks/native" />
-  <project name="oneplus-sm8250-dev/android_frameworks_native" path="frameworks/native" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_frameworks_native" path="frameworks/native" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project name="oneplus-sm8250-dev/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project name="oneplus-sm8250-dev/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/hardware/libhardware" />
   <project name="oneplus-sm8250-dev/android_hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
+  <project name="oneplus-sm8250-dev/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project name="oneplus-sm8250-dev/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/system/bt" />
+  <project name="oneplus-sm8250-dev/android_system_bt" path="system/bt" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/system/core" />
-  <project name="oneplus-sm8250-dev/android_system_core" path="system/core" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_system_core" path="system/core" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/system/libhwbinder" />
   <project name="oneplus-sm8250-dev/android_system_libhwbinder" path="system/libhwbinder" remote="github" groups="proton" revision="sc" />
+  <remove-project name="platform/system/vold" />
+  <project name="oneplus-sm8250-dev/android_system_vold" path="system/vold" remote="github" groups="proton" revision="sc-caf" />
 
   <remove-project name="platform/art" />
   <project name="android_art" path="art" remote="proton" groups="proton" />
@@ -109,7 +123,7 @@
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
-  <project name="oneplus-sm8250-dev/android_manifest" path="manifest" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_manifest" path="manifest" remote="github" groups="proton" revision="sc-caf" />
 
   <!-- CAF repositories -->
   <project path="device/qcom/sepolicy" name="oneplus-sm8250-dev/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
@@ -127,11 +141,11 @@
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_frameworks" revision="sc" remote="github" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/audio" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <!-- <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <!-- <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <!-- <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
-  <!-- <project path="vendor/qcom/opensource/commonsys/system/bt" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/dataservices" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
