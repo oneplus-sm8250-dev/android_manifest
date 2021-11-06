@@ -126,6 +126,7 @@
   <project name="oneplus-sm8250-dev/android_manifest" path="manifest" remote="github" groups="proton" revision="sc-caf" />
 
   <!-- CAF repositories -->
+  <project path="device/qcom/qssi" name="oneplus-sm8250-dev/android_device_qcom_qssi" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="device/qcom/sepolicy" name="oneplus-sm8250-dev/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-dev/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="hardware/qcom-caf/sdm845/audio" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-sdm845" remote="github" />
@@ -142,7 +143,7 @@
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/audio" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
