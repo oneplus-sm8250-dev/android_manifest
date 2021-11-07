@@ -158,7 +158,7 @@
   <project path="vendor/qcom/opensource/vibrator" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
 
   <!-- HALs -->
-  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sapphire-865" remote="github" />
-  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sapphire-865" remote="github" />
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sapphire-865" remote="github" />
+  <project path="hardware/qcom/display" name="oneplus-sm8250-dev/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sc-caf-sm8250" remote="github" />
+  <project path="hardware/qcom/media" name="oneplus-sm8250-dev/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sc-caf-sm8250" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-caf-sm8250" remote="github" />
 </manifest>
