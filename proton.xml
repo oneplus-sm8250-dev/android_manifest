@@ -44,7 +44,7 @@
   <remove-project name="platform/hardware/libhardware" />
   <project name="oneplus-sm8250-dev/android_hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/hardware/qcom/wlan" />
-  <project name="oneplus-sm8250-dev/android_hardware_qcom/wlan" path="hardware/qcom/wlan" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/Bluetooth" />
   <project name="oneplus-sm8250-dev/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/packages/apps/PhoneCommon" />
