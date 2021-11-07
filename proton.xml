@@ -43,8 +43,6 @@
   <project name="oneplus-sm8250-dev/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/hardware/libhardware" />
   <project name="oneplus-sm8250-dev/android_hardware_libhardware" path="hardware/libhardware" remote="github" groups="proton" revision="sc" />
-  <remove-project name="platform/hardware/qcom/bootctrl" />
-  <project name="oneplus-sm8250-dev/android_hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <project name="oneplus-sm8250-dev/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/Bluetooth" />
