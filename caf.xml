@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/qcom/qssi" name="platform/device/qcom/qssi" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="device/qcom/qssi" name="device/qcom/qssi" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="external/ant-wireless/ant_client" name="platform/external/ant-wireless/ant_client" groups="qcom,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.10.3.r1-00300-sdm845.0" />
   <project path="external/ant-wireless/hidl" name="platform/external/ant-wireless/hidl" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="external/json-c" name="platform/external/json-c" groups="qcom,pdk-qcom" remote="caf_system" />
