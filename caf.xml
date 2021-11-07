@@ -7,10 +7,10 @@
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="qcom,pdk-qcom" remote="caf_vendor" />
   <project path="hardware/qcom/thermal" name="platform/hardware/qcom/thermal" groups="qcom,pdk-qcom" remote="caf_vendor" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/commonsys/external/libnfc-nci" groups="qcom,pdk-qcom" remote="caf_system" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/commonsys/frameworks" groups="qcom,pdk-qcom" remote="caf_system" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/commonsys/packages/apps/Nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/external/libnfc-nci" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/frameworks" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/packages/apps/Nfc" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
   <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/opensource/interfaces/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
 </manifest>
