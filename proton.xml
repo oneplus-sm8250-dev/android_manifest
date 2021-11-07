@@ -132,24 +132,14 @@
   <project name="oneplus-sm8250-dev/android_manifest" path="manifest" remote="github" groups="proton" revision="sc-caf" />
 
   <!-- CAF repositories -->
-  <project path="device/qcom/qssi" name="oneplus-sm8250-dev/android_device_qcom_qssi" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="device/qcom/sepolicy" name="oneplus-sm8250-dev/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-dev/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/audio" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/display" name="oneplus-sm8250-dev/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sc-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sdm845/media" name="oneplus-sm8250-dev/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sc-sdm845" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="oneplus-sm8250-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sc-sm8250" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/display" name="oneplus-sm8250-dev/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sc-sm8250" remote="github" />
-  <project path="hardware/qcom-caf/sm8250/media" name="oneplus-sm8250-dev/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sc-sm8250" remote="github" />
   <project path="hardware/qcom-caf/wlan" name="oneplus-sm8250-dev/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="sc-caf" remote="github" />
-  <project path="vendor/codeaurora/telephony" name="oneplus-sm8250-dev/android_vendor_codeaurora_telephony" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="oneplus-sm8250-dev/android_vendor_nxp_interfaces_opensource_nfc" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_external_libnfc-nci" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_frameworks" revision="sc" remote="github" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="oneplus-sm8250-dev/android_vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/audio" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="oneplus-sm8250-dev/android_vendor_codeaurora_telephony" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github">
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/display" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_display" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc-caf" remote="github" />
@@ -161,7 +151,11 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/usb" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
   <project path="vendor/qcom/opensource/vibrator" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
+
+  <!-- HALs -->
+  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="sapphire-865" remote="github" />
+  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="sapphire-865" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="sapphire-865" remote="github" />
 
   <!-- Legacy repositories -->
 
@@ -201,6 +195,9 @@
   <remove-project name="device/linaro/poplar-kernel" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/nxp/secure_element" />
   <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />

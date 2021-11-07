@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/qcom/qssi" name="platform/device/qcom/qssi" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/ant-wireless/ant_client" name="platform/external/ant-wireless/ant_client" groups="qcom,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.10.3.r1-00300-sdm845.0" />
+  <project path="external/ant-wireless/hidl" name="platform/external/ant-wireless/hidl" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/json-c" name="platform/external/json-c" groups="qcom,pdk-qcom" remote="caf_system" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="hardware/qcom/thermal" name="platform/hardware/qcom/thermal" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/commonsys/external/libnfc-nci" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/commonsys/frameworks" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/commonsys/packages/apps/Nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/opensource/interfaces/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+</manifest>
