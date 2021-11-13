@@ -50,7 +50,9 @@
   <remove-project name="platform/packages/apps/PhoneCommon" />
   <project name="oneplus-sm8250-dev/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="oneplus-sm8250-dev/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" groups="proton" revision="sc" />
+  <project name="oneplus-sm8250-dev/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/packages/modules/common" />
+  <project name="oneplus-sm8250-dev/android_packages_modules_common" path="packages/modules/common" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/packages/modules/Wifi" />
   <project name="oneplus-sm8250-dev/android_packages_modules_Wifi" path="packages/modules/Wifi" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/packages/services/Telephony" />
