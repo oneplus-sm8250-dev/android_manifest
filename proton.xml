@@ -26,6 +26,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project name="oneplus-sm8250-dev/android_device_qcom_common" path="device/qcom/common" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project name="oneplus-sm8250-dev/android_external_arm-optimized-routines" path="external/arm-optimized-routines" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/external/tinycompress" />
   <project name="oneplus-sm8250-dev/android_external_tinycompress" path="external/tinycompress" remote="github" groups="proton" revision="sc" />
   <project name="oneplus-sm8250-dev/android_external_tinyxml" path="external/tinyxml" remote="github" groups="pdk" revision="sc" />
