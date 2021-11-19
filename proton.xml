@@ -49,6 +49,8 @@
   <project name="oneplus-sm8250-dev/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/Bluetooth" />
   <project name="oneplus-sm8250-dev/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" groups="proton" revision="sc-caf" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project name="oneplus-sm8250-dev/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" groups="proton" revision="sc" />
   <remove-project name="platform/packages/apps/PhoneCommon" />
   <project name="oneplus-sm8250-dev/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" groups="proton" revision="sc-caf" />
   <remove-project name="platform/packages/apps/Settings" />
@@ -101,8 +103,6 @@
   <project name="android_packages_modules_Permission" path="packages/modules/Permission" remote="proton" groups="proton" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="proton" groups="proton" />
-  <remove-project name="platform/packages/apps/Contacts" />
-  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Messaging" />
   <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/DeskClock" />
