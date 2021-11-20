@@ -12,6 +12,11 @@
   <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
   <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" groups="qcom,pdk-qcom" remote="caf_vendor" />
 </manifest>
