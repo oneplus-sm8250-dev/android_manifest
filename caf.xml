@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/qcom/qssi" name="device/qcom/qssi" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/ant-wireless/ant_client" name="platform/external/ant-wireless/ant_client" groups="qcom,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.10.3.r1-00300-sdm845.0" />
+  <project path="external/ant-wireless/hidl" name="platform/external/ant-wireless/hidl" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="external/json-c" name="platform/external/json-c" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="hardware/qcom-caf/wlan" name="platform/hardware/qcom/wlan" groups="qcom,qcom_wlan,pdk-qcom" remote="caf_vendor" />
+  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom,qcom_display,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.9.12.r1-13300-SMxx50.QSSI12.0" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.9.12.r1-13300-SMxx50.QSSI12.0" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.9.12.r1-13300-SMxx50.QSSI12.0" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="platform/vendor/codeaurora/telephony" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/external/libnfc-nci" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/frameworks" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform/vendor/nxp/opensource/packages/apps/Nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio,pdk-qcom" remote="caf_vendor" revision="refs/tags/LA.UM.9.12.r1-13300-SMxx50.QSSI12.0" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="platform/vendor/qcom-opensource/wfd-commonsys" groups="qcom,pdk" remote="caf_system" revision="refs/tags/LA.QSSI.11.0.r1-05800-qssi.0" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/core-utils" name="platform/vendor/qcom-opensource/core-utils" groups="qcom,pdk-qcom" remote="caf_system" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/dpm" name="platform/vendor/qcom-opensource/dpm" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/power" name="platform/vendor/qcom-opensource/power" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/usb" name="platform/vendor/qcom-opensource/usb" groups="qcom,pdk-qcom" remote="caf_vendor" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform/vendor/qcom-opensource/vibrator" groups="qcom,pdk-qcom" remote="caf_vendor" />
+
+  <project path="device/qcom/common" name="AOSPA/android_device_qcom_common" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
+  <project path="device/qcom/sepolicy" name="oneplus-sm8250-dev/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="github" revision="sc" />
+  <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-dev/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="github" revision="sc" />
+  <project path="vendor/qcom/common" name="ThankYouMario/proprietary_vendor_qcom_common" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
+  <project path="vendor/qcom/opensource/interfaces" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="github" revision="sc" />
+</manifest>
