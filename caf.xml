@@ -22,7 +22,6 @@
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform/vendor/qcom-opensource/bluetooth_ext" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys/display" name="platform/vendor/qcom-opensource/display-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys/dpm" name="platform/vendor/qcom-opensource/dpm-commonsys" groups="qcom,pdk-qcom" remote="caf_system" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform/vendor/qcom-opensource/system/bt" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/core-utils" name="platform/vendor/qcom-opensource/core-utils" groups="qcom,pdk-qcom" remote="caf_system" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="caf_vendor" />
@@ -38,5 +37,6 @@
   <project path="device/qcom/sepolicy_vndr" name="oneplus-sm8250-dev/android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="github" revision="sc-v2-caf" />
   <project path="vendor/qcom/common" name="ThankYouMario/proprietary_vendor_qcom_common" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="AOSPA/android_vendor_qcom-opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" remote="github" revision="sapphire" />
   <project path="vendor/qcom/opensource/interfaces" name="oneplus-sm8250-dev/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="github" revision="sc-v2-caf" />
 </manifest>
